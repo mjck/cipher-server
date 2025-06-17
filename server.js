@@ -61,7 +61,7 @@ const ciphers = {
 }
 
 Object.entries(ciphers).forEach(([fname, cipher]) => {
-  fs.createReadStream(".data/" + fname)
+  fs.createReadStream("./data/" + fname)
     .pipe(
       parse({
         delimiter: ",",
